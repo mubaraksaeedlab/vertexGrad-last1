@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <title>@yield('title', __('backend.supervisor_layout.default_title'))</title>
-    
-
-    <link rel="apple-touch-icon"
-          href="{{ setting('platform_logo') ? asset('storage/' . setting('platform_logo')) : asset('vendors/images/apple-touch-icon.png') }}" />
-
-    <link rel="icon"
-          href="{{ setting('platform_favicon') ? asset('storage/' . setting('platform_favicon')) : asset('vendors/images/VertexGrad_logod.png') }}">
+    <link rel="icon" href="{{ asset('images/logo.png') }}" type="image/png">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -1097,7 +1091,7 @@
     <div class="brand-logo">
         <a href="{{ route('supervisor.dashboard') }}" class="sidebar-logo-link">
             <img
-                src="{{ !empty($adminUser?->profile_image) ? asset('storage/' . $adminUser->profile_image) : asset('vendors/images/photo1.jpg') }}"
+                src="{{ !empty($adminUser?->profile_image) ? asset('storage/' . $adminUser->profile_image) : asset('images/logo.png') }}"
                 alt="{{ __('backend.supervisor_layout.user_avatar') }}"
                 class="sidebar-account-avatar"
             >
