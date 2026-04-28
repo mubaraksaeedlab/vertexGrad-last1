@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <title>{{ setting('platform_name', 'VertexGrad') }} - @yield('title', __('backend.manager_layout.default_title'))</title>
+    <link rel="icon" href="{{ asset('images/logo.png') }}" type="image/png">
 
     <link rel="apple-touch-icon"
           href="{{ setting('platform_logo') ? asset('storage/' . setting('platform_logo')) : asset('vendors/images/apple-touch-icon.png') }}" />
-
-    <link rel="icon"
-          href="{{ setting('platform_favicon') ? asset('storage/' . setting('platform_favicon')) : asset('vendors/images/VertexGrad_logod.png') }}">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -864,7 +862,7 @@ $message = $key
 <div class="left-side-bar">
     <div class="brand-logo">
         <a href="{{ route('manager.dashboard') }}" class="sidebar-logo-link">
-            <img src="{{ setting('admin_logo') ? asset('storage/' . setting('admin_logo')) : (setting('platform_logo') ? asset('storage/' . setting('platform_logo')) : asset('vendors/images/VertexGrad_logod.png')) }}"
+            <img src="{{ setting('admin_logo') ? asset('storage/' . setting('admin_logo')) : (setting('platform_logo') ? asset('storage/' . setting('platform_logo')) : asset('images/logo.png')) }}"
                  alt="{{ setting('platform_name', 'VertexGrad') }}"
                  class="sidebar-logo-img" />
         </a>

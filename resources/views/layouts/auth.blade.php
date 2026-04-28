@@ -6,10 +6,10 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('title', __('backend.auth_layout.default_title'))</title>
+    <link rel="icon" href="{{ asset('images/logo.png') }}" type="image/png">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('vendors/images/apple-touch-icon.png') }}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('vendors/images/favicon-32x32.png') }}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('vendors/images/favicon-16x16.png') }}" />
+  
+  
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
@@ -178,7 +178,7 @@
             <div class="container-fluid">
                 <div class="auth-header-inner">
                     <a href="{{ route('admin.login.show') }}" class="auth-brand">
-                        <img src="{{ asset('vendors/images/VertexGrad_logoud.png') }}" alt="{{ __('backend.auth_layout.logo_alt') }}">
+                        <img src="{{ asset('images/logo.png') }}" alt="{{ __('backend.auth_layout.logo_alt') }}">
                         <div class="auth-brand-text">
                             <div class="auth-brand-title">{{ __('backend.auth_layout.brand_title') }}</div>
                             <div class="auth-brand-subtitle">{{ __('backend.auth_layout.brand_subtitle') }}</div>
